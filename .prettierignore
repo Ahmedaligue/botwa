@@ -1,0 +1,9 @@
+.github/
+.npm/
+.config/
+emojis/
+dist/
+logs/
+node_modules/
+sessions/
+tmp/
