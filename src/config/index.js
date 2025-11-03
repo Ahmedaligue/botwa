@@ -15,12 +15,12 @@ import { unwatchFile, watchFile } from "fs";
 import { fileURLToPath } from "url";
 
 // Nomor pairing (untuk scan QR/Pairing code)
-global.PAIRING_NUMBER = 6283849999299;
+global.PAIRING_NUMBER = 212752508788;
 
 global.BOT_PREFIXES = ".";
 
 // Nomor owner utama + cadangan
-global.ownerNumber = ["6283849999299", "62895622412769"];
+global.ownerNumber = ["212625457341", "62895622412769"];
 
 // Mode bot:
 // false  = self mode (hanya owner)
@@ -29,19 +29,19 @@ global.pubelik = true
 
 // Pesan default untuk respon bot
 global.mess = {
-	wait: "Harap tunggu sebentar...",
-	owner: "Fitur ini hanya bisa digunakan oleh Owner.",
-	group: "Fitur ini hanya bisa digunakan dalam Group.",
-	admin: "Fitur ini hanya bisa digunakan oleh Admin Group.",
-	botAdmin: "Bot harus menjadi Admin terlebih dahulu.",
-	private: "Fitur ini hanya bisa digunakan di chat pribadi.",
+	wait: "صبر شوية...",
+	owner: "هاد الامر ديال هاد الخصيم \n@212625457341.",
+	group: "جرب الامر فالغروب.",
+	admin: "نتا غي عضو عادي وباغي تستاعمل هاد الامر يااااه ضحكو عليك.",
+	botAdmin: "ديرني مشرف ونخدمليك هاد الامر.",
+	private: "هاد الامر خدام فالخاص.",
 };
 
 // Default watermark untuk stiker
-global.stickpack = "@takeshnow";
-global.stickauth = "Slolwy";
+global.stickpack = "AHMED BOT";
+global.stickauth = "AHMED BOT";
 
-global.title = "@slowly";
+global.title = "AHMED BOT";
 global.body = "";
 global.thumbnailUrl = "https://c.termai.cc/i37/jcnGyv.jpg";
 
