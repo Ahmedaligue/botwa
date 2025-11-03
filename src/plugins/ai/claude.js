@@ -2,7 +2,7 @@ import api from "#utils/API/request";
 
 export default {
 	name: "claude",
-	description: "Chat AI menggunakan Claude AI.",
+	description: "استخدام مودلClaude AI للذكاء الاستناعي.",
 	category: "ai",
 	command: ["claude"],
 	settings: {
@@ -14,7 +14,7 @@ export default {
 		const input = m.isQuoted ? m.quoted.text : m.text?.trim();
 		if (!input)
 			return m.reply(
-				`Masukkan pertanyaan atau perintah!\n\nContoh:\n.claude apa itu AI`
+				`خاصك شي استفسار بعد الامر \nجرب هاد التويشية :.claude ماحكم النرد في الذين الاسلامي \nملاحضة ⚠️ الا جاب الله بديت كانخلبق قولها للمطور باش اصلحني`
 			);
 
 		try {
