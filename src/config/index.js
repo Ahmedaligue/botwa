@@ -20,7 +20,7 @@ global.PAIRING_NUMBER = 212752508788;
 global.BOT_PREFIXES = ".";
 
 // Nomor owner utama + cadangan
-global.ownerNumber = ["212625457341", "62895622412769"];
+global.ownerNumber = ["212625457341", "212625457341"];
 
 // Mode bot:
 // false  = self mode (hanya owner)
@@ -43,7 +43,7 @@ global.stickauth = "AHMED BOT";
 
 global.title = "AHMED BOT";
 global.body = "";
-global.thumbnailUrl = "https://c.termai.cc/i37/jcnGyv.jpg";
+global.thumbnailUrl = "https://files.catbox.moe/0rr4qm.jpg";
 
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
