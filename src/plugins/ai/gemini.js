@@ -2,7 +2,7 @@ import api from "#utils/API/request";
 
 export default {
 	name: "gemini",
-	description: "Chat AI menggunakan Gemini AI.",
+	description: "Chat AI باستخدام Gemini AI.",
 	category: "ai",
 	command: ["gemini", "gm"],
 	settings: {
@@ -14,7 +14,7 @@ export default {
 		const input = m.isQuoted ? m.quoted.text : m.text?.trim();
 		if (!input)
 			return m.reply(
-				`Masukkan pertanyaan atau perintah!\n\nContoh:\n.gm apa itu AI`
+				`حط استفسار بعد الامر \nبحال هكا : .gm من هو سينكو ايشيغامي`
 			);
 
 		try {
@@ -22,18 +22,18 @@ export default {
 			const response = await api.Neko.get("/ai/gemini/2.5-flash/v1", {
 				text: input,
 				systemPrompt:
-					"You are a helpful and friendly assistant, and use Indonesian language.",
+					"You are a helpful and friendly assistant, and use arabic language.",
 			});
 
 			const { success, result, message } = response.data || {};
 
 			if (!success)
-				return m.reply(message || "Gagal mendapatkan respons.");
+				return m.reply(message || "اودييي مالقيتش ليك جاواب يا اتكون نتا سبيتي يا مني الغلاط.");
 
-			m.reply(result || "Maaf, tidak ada respons.");
+			m.reply(result || "السموحات pas de jawab.");
 		} catch (err) {
 			console.error(err);
-			m.reply("Terjadi kesalahan saat menghubungi API.");
+			m.reply("api عندي مات ليه الحوت قولها للمطور باش اصلحو.");
 		}
 	},
 };
