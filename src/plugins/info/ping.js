@@ -7,7 +7,7 @@ export default {
 	category: "info",
 	command: ["os", "ping"],
 	settings: {
-		owner: false,
+		owner: true,
 		admin: false,
 		botAdmin: false,
 		group: false,
