@@ -23,7 +23,7 @@ export default {
 		const q = m.isQuoted ? m.quoted : m;
 		const mime = q.type || "";
 		if (!/webp|sticker|document/i.test(mime)) {
-			return m.reply("Please reply/send a sticker with the command.");
+			return m.reply("tagu sicker liba4i t7owlo l img oktb .toimg.");
 		}
 		const media = await q.download();
 		const buffer = Buffer.isBuffer(media)
