@@ -54,7 +54,7 @@ export default {
 			menu += `╰────────────\n\n`;
 		}
 
-		menu += `_@Slowly - NNN Experiment._`;
+		menu += `_ahmed bot - ahmed aligue._`;
 
 		await m.reply(menu);
 	},
