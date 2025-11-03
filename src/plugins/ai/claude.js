@@ -21,7 +21,7 @@ export default {
 			const response = await api.Neko.get("/ai/claude/sonnet-4.5", {
 				text: input,
 				systemPrompt:
-					"You are a helpful and friendly assistant, and use Indonesian language.",
+					"You are a helpful and friendly assistant, and use arabic language.",
 			});
 
 			const { success, result, message } = response.data || {};
@@ -29,10 +29,10 @@ export default {
 			if (!success)
 				return m.reply(message || "Gagal mendapatkan respons.");
 
-			m.reply(result || "Maaf, tidak ada respons.");
+			m.reply(result || "السموحات مالقيتش ليك جواب.");
 		} catch (err) {
 			console.error(err);
-			m.reply("Terjadi kesalahan saat menghubungi API.");
+			m.reply("كاين واحد ال error ف api قلها لمطور باش اصلحو.");
 		}
 	},
 };
