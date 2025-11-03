@@ -20,7 +20,7 @@ export default {
 		const input = m.isQuoted ? m.quoted.text : m.text?.trim();
 
 		if (!input) {
-			return m.reply(`*Usage:* .brat <text> atau reply pesan teks.`);
+			return m.reply(`*katdir:* .brat <text> ikatrd 3la phot.`);
 		}
 
 		try {
@@ -41,7 +41,7 @@ export default {
 			await m.reply({ sticker });
 		} catch (error) {
 			console.error("[BRAT STICKER ERROR]", error);
-			await m.reply("⚠️ Terjadi error saat memproses stiker.");
+			await m.reply("ahyaaaa xno kadiiiir maxiii hkaaak.");
 		}
 	},
 };
