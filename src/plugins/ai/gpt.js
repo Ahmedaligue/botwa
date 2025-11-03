@@ -4,7 +4,7 @@ global.chatgpt ??= {};
 
 export default {
 	name: "chatgpt",
-	description: "Chat AI menggunakan ChatGPT.",
+	description: "Chat AI باستخدام ChatGPT.",
 	category: "ai",
 	command: ["chatgpt", "gpt"],
 	settings: {
@@ -16,31 +16,31 @@ export default {
 		const input = m.isQuoted ? m.quoted.text : m.text?.trim();
 		if (!input)
 			return m.reply(
-				`Masukkan pertanyaan atau perintah!\n\nContoh:\n.gpt apa itu AI`
+				`حط شي استفسار باش نقدر نجاوبك بحال \n.gpt من هو سينكو ايشيغامي`
 			);
 
 		// Inisialisasi session chat jika belum ad
 		if (!global.chatgpt[m.sender]) global.chatgpt[m.sender] = [];
 
 		// Tambahkan pesan user
-		global.chatgpt[m.sender].push({ role: "user", content: input });
+		global.chatgpt[m.sender].push({ role: "مستخدم", content: input });
 
 		try {
 			const params = {
 				text: global.chatgpt[m.sender],
-				systemPrompt: "You are a helpful assistant.",
+				systemPrompt: "You are a helpful assistant. Use arabic language",
 			};
 
 			const res = await api.Neko.get("/ai/gpt/5", {
 				text: global.chatgpt[m.sender],
-				systemPrompt: "You are a helpful and friendly asistant.",
+				systemPrompt: "You are a helpful and friendly asistant. Use arabic language",
 			});
 			//console.log(res?.data)
-			const result = res?.data?.result || "Maaf, tidak ada respons.";
+			const result = res?.data?.result || "mal9itx lik jawab 3awd sowl bsi4a o5ra.";
 
 			// Simpan respons dari asisten ke riwayat percakapan
 			global.chatgpt[m.sender].push({
-				role: "assistant",
+				role: "مساعد",
 				content: result,
 			});
 
