@@ -37,7 +37,7 @@ export default {
 				await fetch(pfpUrl).then((res) => res.arrayBuffer())
 			);
 			const sticker = await Sticker.create(mediaBuffer, {
-				packname: "@slowlyh.",
+				packname: "ahmed bot.",
 				author: m.pushName,
 				emojis: "🤣",
 			});
@@ -87,7 +87,7 @@ export default {
 				const data = await response.json();
 				const quotly = Buffer.from(data.result.image, "base64");
 				const sticker = await Sticker.create(quotly, {
-					packname: "@slowlyh.",
+					packname: "ahmed bot.",
 					author: m.pushName,
 					emojis: "🤣",
 				});
@@ -117,7 +117,7 @@ export default {
 					await fetch(emojiUrl).then((res) => res.arrayBuffer())
 				);
 				const sticker = await Sticker.create(buffer, {
-					packname: "@slowlyh.",
+					packname: "ahmed bot.",
 					author: m.pushName,
 					emojis: emojis[0],
 				});
@@ -144,7 +144,7 @@ export default {
 					await fetch(mediaUrl).then((res) => res.arrayBuffer())
 				);
 				const sticker = await Sticker.create(buffer, {
-					packname: "@slowlyh.",
+					packname: "ahmed bot.",
 					author: m.pushName,
 					emojis: emojis.join(""),
 				});
@@ -170,7 +170,7 @@ export default {
 			);
 			const memeImage = await res.arrayBuffer();
 			const sticker = await Sticker.create(Buffer.from(memeImage), {
-				packname: "@slowlyh.",
+				packname: "ahmed bot.",
 				author: m.pushName,
 				emojis: "🤣",
 			});
@@ -179,7 +179,7 @@ export default {
 
 		if (isMedia && input.length === 0) {
 			const sticker = await Sticker.create(mediaBuffer, {
-				packname: "@slowlyh.",
+				packname: "ahmed bot.",
 				author: m.pushName,
 				emojis: "🤣",
 			});
@@ -206,7 +206,7 @@ export default {
 				}
 			}
 			const sticker = await Sticker.create(buffer, {
-				packname: "@slowlyh.",
+				packname: "ahmed bot.",
 				author: m.pushName,
 				emojis: "🤣",
 			});
